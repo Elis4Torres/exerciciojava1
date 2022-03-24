@@ -22,7 +22,7 @@ public class Exercicio2_emilynn_elis {
         double num, soma = 0;
         int cont = 0;
         
-        do {
+        do{
             System.out.println("Digite um número: ");
             num = ent.nextDouble(); 
             
@@ -30,11 +30,12 @@ public class Exercicio2_emilynn_elis {
                 soma = num + soma;
                 cont++;
             }
-            break;
-        } while(num>=0);
+        }
+        
+        while(num>=0);
         
         System.out.println("A soma é " + soma);
         System.out.println("A quantidade de números digitados foi " + cont);
         System.out.println("A média é " + soma / cont);
-    }    
+    }
 }
