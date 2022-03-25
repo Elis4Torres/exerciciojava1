@@ -38,5 +38,45 @@ public class Exercicio1_emilynn_elis {
     
         System.out.print(unidade[ Integer.parseInt])
     }
+      Sistema . fora . print(unidade[ Integer . parseInt((a)) ][b]);
+    }
+    public  static  void  entrada (){
+        Scanner ent =  novo  Scanner ( System . in);
+        Sistema . saida . println( " Digite um número " );
+        String num = ent . próximaLinha();
+        ent . Fechar();
+        String cent =  " " ,
+                dez =  " " ,
+                unid =  " " ;
+
+        unid += num . charAt(num . comprimento() -  1 );
+
+        if (num . comprimento() >  2 ){
+            cent += num . charAt( num . comprimento() -  3 );
+            if (num . charAt( num . length() -  3 ) !=  ' 0 ' ){
+                extenso(cent, 3 );
+                Sistema . saida . print( " e " );
+
+            }
+        }
+        if (num . comprimento() >  1 ){
+            dez += num . charAt( num . comprimento() -  2 );
+            if (num . charAt( num . length() -  2 ) !=  ' 0 ' ) {
+                if (num . charAt( num . length() -  2 ) ==  ' 1 ' )
+                    extenso(unid 0 );
+                senão {
     
-}
+                    extenso(dez, 2 );
+                    Sistema . saida . print( " e " );
+                }
+            }
+        }
+        tente {
+            if (num . charAt( num . length() -  2 ) !=  ' 1 ' )
+            extenso(unid, 1 );
+        } catch ( Exceção e) {
+            extenso(unid, 1 );
+        }
+        
+    }
+
